@@ -1,0 +1,34 @@
+<?php
+
+return [
+    'doctrine' => [
+        'connection' => [
+            'orm_default' => [
+                'driverClass' =>'Doctrine\DBAL\Driver\PDOPgSql\Driver',
+                'params' => [
+                    'host'     => 'localhost',
+                    'port'     => '5432',
+                    'user'     => 'user',
+                    'password' => 'pass',
+                    'dbname'   => 'dbname',
+                    'driverOptions' => [
+                        1002 => 'SET NAMES utf8'
+                    ],
+                ],
+            ]
+        ],
+
+        'configuration' => [
+            'orm_default' => [
+                'metadata_cache'    => 'array',
+                'query_cache'       => 'array',
+                'result_cache'      => 'array',
+                'driver'            => 'orm_default',
+                'generate_proxies'  => true,
+                'proxy_dir'         => 'data/DoctrineORMModule/Proxy',
+                'proxy_namespace'   => 'DoctrineORMModule\Proxy',
+                'filters'           => [],
+            ]
+        ],
+    ],
+];
