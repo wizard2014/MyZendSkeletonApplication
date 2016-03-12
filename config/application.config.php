@@ -25,6 +25,7 @@ return [
 //        'HtUserRegistration',
 //        'HtUserRegistrationDoctrineORM',
 //        'BjyAuthorize',
+        'GoSession',
     ],
 
     // These are various options for the listeners attached to the ModuleManager
